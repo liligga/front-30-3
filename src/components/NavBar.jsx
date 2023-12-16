@@ -15,6 +15,9 @@ const NavBar = () => {
             <li>
                 <NavLink className={activeMenu} to="/posts">Posts</NavLink>
             </li>
+            <li>
+                <NavLink className={activeMenu} to="/login">Login</NavLink>
+            </li>
         </ul>
     </nav>
   )

@@ -1,0 +1,32 @@
+# CRUD
+# Create - создание сущности 
+
+POST https://dummyjson.com/posts/add
+Content-Type: application/json
+
+{
+    "title": "fdsfdsfds",
+    "body": "lorem ipsum",
+    "userId": 2
+}
+
+###
+# Read - Получение данных
+# Несколько постов
+GET https://dummyjson.com/posts?limit=10&skip=10
+
+###
+# один пост
+GET https://dummyjson.com/posts/15
+
+###
+# Update - изменение сущности
+PUT https://dummyjson.com/posts/3
+Content-Type: application/json
+
+{"userId": 9}
+# PATCH https://dummyjson.com/posts/3
+
+###
+# Delete
+DELETE https://dummyjson.com/posts/20

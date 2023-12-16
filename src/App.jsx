@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import PostsPage from "./pages/PostsPage";
 import AboutPage from "./pages/AboutPage";
+import SinglePostPage from "./pages/SinglePostPage";
+import LoginPage from "./pages/LoginPage";
 import Layout from "./components/Layout";
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="posts" element={<PostsPage />} />
+          <Route path="posts/:postId" element={<SinglePostPage />} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="*" element={<h4>Not found</h4>} />
         </Route>
       </Routes>
     </>
