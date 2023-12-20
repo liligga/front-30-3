@@ -5,7 +5,7 @@ const activeMenu = ({isActive}) => isActive ? "active-navlink" : ""
 const NavBar = () => {
   return (
     <nav>       
-        <ul>
+        <ul className="horizontal">
             <li>
                 <NavLink className={activeMenu} to="/">Home</NavLink>
             </li>
@@ -17,6 +17,9 @@ const NavBar = () => {
             </li>
             <li>
                 <NavLink className={activeMenu} to="/login">Login</NavLink>
+            </li>
+            <li>
+                <NavLink className={activeMenu} to="/parent">Parent</NavLink>
             </li>
         </ul>
     </nav>

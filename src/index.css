@@ -61,7 +61,12 @@ nav a.active-navlink {
 ul {
   list-style: none;
   padding: 0;
-  margin: 0
+  margin: 0;
+}
+
+ul.horizontal {
+  display: flex;
+  gap: 1rem;
 }
 
 @media (prefers-color-scheme: light) {
